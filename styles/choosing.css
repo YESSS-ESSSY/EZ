@@ -1,0 +1,174 @@
+/*전체 배경화면*/
+#choose{
+  background-color: var(--color-EPearBlossom);
+  text-align: center; /*가운데 정렬*/
+}
+
+/*제목*/
+#choose .section__title {
+  padding-top: 0.5em; /*제일 위와의 공간*/
+  padding-bottom: 0.2em; /*부제와의 공간*/
+  font-size: var(--font-size-large); 
+  font-weight:bolder;
+}
+
+/*부제 부분*/
+/*EWHA MAP*/
+#choose .section__subtitle strong {
+  color: var(--color-EGreen); 
+  font-weight:bold;
+}
+/*공부할 곳, 쉴 곳*/
+#choose .section__subtitle em {
+  color: var(--color-EBlue); 
+  font-weight:500;
+}
+
+
+/*버튼*/
+/*버튼 배치*/
+.choose{
+  display:inline-flex;
+}
+/*아이콘 색 반전.여백*/
+.choose__button img {
+  filter: invert(100%);
+  margin-top: 30px;
+}
+/*버튼 설정*/
+.choose__button { 
+  margin-top: 2.0em;
+  padding: 10px;
+  gap: 56px;
+  width: 320px;
+  background-color: var(--color-EGreen);
+  text-align: center;
+  color:white;
+  border-radius: 12px; /*모서리 둥글게*/
+  cursor: pointer;
+}
+/*버튼 내 글씨*/
+.choose__title{
+  font-size: var(--font-size-middle);
+  font-weight:bold;
+  margin: 7px 0px;
+}
+.choose__title._1{
+  color: var(--color-ECoral);
+}
+.choose__title._2{
+  color: var(--color-EMint);
+}
+.choose__text {
+  margin-bottom: 30px;
+  font-size: var(--font-size-text);
+}
+
+
+/*footer*/
+.choose--footer{
+  background-color: var(--color-EPearBlossom);
+}
+.footer_container {
+  display:flex;
+  width:70rem;
+  margin-top: 30px;
+  border-top: 2px solid rgba(51, 45, 45, 0.6);
+  justify-content: space-between;
+}
+.choose--footer {
+  display:flex;
+  justify-content:center;   
+}
+.aboutus {
+  padding: 10px 50px;
+}
+
+.allrights{
+  padding: 10px 30px;
+}
+
+
+/*mobile*/
+@media (max-width: 768px) {
+  /*제목*/
+  .choose{
+    flex-direction: column;
+    height: 100vh;
+  }
+  #choose .section__title {
+    font-size: var(--font-size-middle); 
+    font-weight:bolder;
+  }
+  /*로고 크기*/
+  .choose__button img {
+    height: 50px;
+    margin-top: 10px;
+  }
+  /*버튼 설정*/
+  .choose__button { 
+    width: 350px;
+    height: 170px;
+    margin-top:1.5em;
+  }
+  /*버튼 제목 간격 조정*/
+  .choose__title {
+    margin: 3px 0px;
+}
+  /*버튼 설명 밑 간격 조정*/
+  .choose__text {
+    margin-bottom: 10px;
+  }
+}
+
+
+/*desktop*/
+@media (min-width: 769px) {
+  #choose {
+    grid-column: 1 / -1; /*화면 꽉 채우기*/
+  }
+  #choose {
+    /*border가 오른쪽에 들어가야함*/
+    border-right: 4px solid var(--color-light-bg);
+  }
+  .choose__button._1{
+    /*버튼 간 간격(1번 버튼 오른쪽 마진으로 주었음)*/
+    margin-right:50px;
+  }
+
+  /*로고 크기*/
+  .choose__button img{
+    height: 124px;
+  }
+
+  /*애니메이션 효과*/
+  .choose__button{
+    transition: all 350ms;
+  }
+  /*마우스 오버시 해당 카드 외 축소 기능*/
+  .choose:hover .choose__button:not(:hover) {
+    /*선택 안 됨->크기 축소*/
+    transform: scale(0.95);
+  }
+  /* 흐림 필터링을 위한 덮개 */
+  /*가상 요소를 만들어 덮어버리기*/
+  .choose:hover .choose__button:not(:hover)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+  /*롤오버된 카드*/
+  .choose__button:hover {
+    /*크기 키우기*/
+    transform: scale(1.01);
+  }
+  .choose__button:hover img {
+    /*아이콘 불투명하게*/
+    opacity: 1;
+  }
+}

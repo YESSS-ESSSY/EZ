@@ -1,0 +1,87 @@
+/*css 파일로 불러오기*/
+@import url('./styles/choosing.css');
+
+/*폰트 불러오기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+:root {
+    /* 색상 */
+    --color-EGreen: #00462A;
+    --color-EPearBlossom: #FFFDF1;
+    --color-EGrey: #B9B9B9;
+    --color-ECoral: #F27367;
+    --color-EMint: #36AE92;
+    --color-EBlue: #45A2BC;
+    --color-EYellowGreen: #BCC924;
+    /* 폰트이름 */
+    --font-code: 'Nanum Gothic Coding', monospace;
+    /* 폰트 크기 이 3가지로 통일! 별로면 수정 혹은 추가 */
+    --font-size-large: 44px;
+    --font-size-middle: 30px;
+    --font-size-small: 15px;
+
+    /* 툴바 크기 고정. 근데 작업해보고 사이즈 조정 필요 */
+    --height-toolbar:70px;
+
+}
+
+/*얄코 초기화 그대로 적용*/
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  
+  /* 개발용 설정 */
+    min-height: 150vh;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0;
+}
+  
+p {
+    margin: 0;
+}
+  
+strong, em {
+    font-weight: inherit;
+    font-style: normal;
+}  
+  
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+dl { margin: 0; }
+dd {
+    margin: 0;
+    display: inline;
+}
+  
+figure { margin: 0; }
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+th { font-weight: normal; }
+  
+address { font-style: inherit; }
+
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
