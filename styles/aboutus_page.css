@@ -1,0 +1,55 @@
+@import url(../style.css);
+.title{
+    text-align: center;
+    color: var(--color-EGreen);
+    font-size:var(--font-size-large);
+    font-weight:800;
+    padding:20px 20px;
+}
+.subtitle {
+    text-align: center;
+    color: var(--color-EGreen);
+    font-size: var(--font-size-middle);
+    font-weight: 500;
+    padding:30px 20px;
+}
+.info {
+    height:330px;
+}
+section > b {
+    color: var(--color-EGreen);
+}
+main {
+    position: relative;
+    padding:50px 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer_container {
+    display: flex;
+    width:70rem;
+    border-top: 3px solid rgba(51, 45, 45, 0.6);
+    justify-content: space-between;
+}
+.aboutus_page--footer {
+    display: flex;
+    justify-content:center;   
+}
+.aboutus {
+    padding: 10px 50px;
+}
+
+.allrights{
+    padding: 10px 30px;
+}
+
+.logo {
+    position: absolute;
+    left: 200px;
+    top: -181px;
+    z-index:-1;
+    display: flex;
+    height:260px;
+}
+
+
