@@ -1,7 +1,6 @@
-@import url(./first_page.css);
-
 /*css 파일로 불러오기*/
-@import url('./styles/choosing.css');
+@import url('./first_page.css');
+@import url('./choosing.css');
 
 /*폰트 불러오기*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
