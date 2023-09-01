@@ -87,3 +87,21 @@ header h1 {
   border: none;
   border-top: 2px solid #BCC924; /* 회색 구분선 */
 }
+
+/* .header-content 스타일링 */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px; /* 이미지 크기 조정 */
+  height: auto;
+  margin-right: 2em; /* 이미지 오른쪽 여백 */
+  margin-left: 2em;
+}
+
+.main-title {
+  text-align: left;
+  margin: 0; /* 기본 제목 여백 제거 */
+}
