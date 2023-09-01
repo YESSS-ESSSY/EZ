@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5646%2F2023%2F06%2F05%2F0000041743_004_20230609140802746.jpg&type=sc960_832');
+  background-image: url('../images/ECCimage.jpeg');
   background-size: cover;
   background-position: center;
 }

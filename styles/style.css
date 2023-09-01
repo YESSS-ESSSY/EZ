@@ -1,6 +1,9 @@
 /*css 파일로 불러오기*/
 @import url('./first_page.css');
 @import url('./choosing.css');
+@import url('./ecc_study_main.css');
+@import url('./ecc_study_intro.css');
+@import url('./ecc_study_header.css');
 
 /*폰트 불러오기*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
