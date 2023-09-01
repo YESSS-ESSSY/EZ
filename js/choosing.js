@@ -7,8 +7,8 @@ btn1.addEventListener('click',toStudyPage);
 btn2.addEventListener('click',toRestPage);
 
 function toStudyPage(){
-  window.location.href="./bldg_study.html";
+  window.location.href="../pages/bldg_study.html";
 }
 function toRestPage(){
-  window.location.href="./bldg_rest.html";
+  window.location.href="../pages/bldg_rest.html";
 }
