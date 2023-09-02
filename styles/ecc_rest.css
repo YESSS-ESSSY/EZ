@@ -1,0 +1,111 @@
+/* Reset default margin and padding */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles */
+.body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Style header */
+header {
+  background-color: #00462A; /* 진녹색 */
+  color: #fffdf1;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1 {
+  font-size: 3em; /* 큰 글씨 크기 */
+}
+
+.subtitle {
+  font-size: 1.2em; /* 큰 글씨 크기 */
+}
+
+/* Style content section */
+.content {
+  margin: 2em;
+  padding: 1em;
+  background-color: #B9B9B9; /* 아이보리 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.floor-buttons {
+  display: flex;
+  justify-content: space-between; /* 공간을 4등분으로 나누기 */
+  margin-top: 1em;
+}
+
+.floor-button {
+  background-color: #949494; /* 회색 */
+  border: none;
+  color: #FFFDF1;
+  padding: 1em 3em; /* 더 넓은 버튼 */
+  cursor: pointer;
+  font-size: 1.2em; /* 버튼 글씨 크기 */
+  transition: background-color 0.3s ease-in-out; /* 부드러운 배경색 전환 */
+}
+
+.floor-button.active {
+  background-color: #00462A; /* 진녹색 */
+}
+
+.floor-description {
+  margin-top: 2em; /* 설명과의 간격 늘리기 */
+  padding: 1em; /* 내용 주위에 여백 추가 */
+  background-color: #FFFDF1; /* 흰 배경색 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* 설명 텍스트 왼쪽 정렬 */
+  font-size: 1.1em; /* 조금 줄인 설명 글씨 크기 */
+  color: #333333;
+  line-height: 1.6; /* 줄 간격 늘리기 */
+  
+}
+
+.floor-description h2 {
+  font-size: 1.4em; /* 문장 부분의 글씨 크기 */
+  margin-bottom: 0.5em; /*문장 아래 여백 추가*/
+}
+.dsc{
+  padding:30px;
+}
+/* Show description for the selected floor */
+.description {
+  display:none;
+}
+
+.description.active{
+ display:flex;
+ flex-direction: row;
+}
+
+
+/* Style the horizontal rule for floor descriptions */
+.floor-description hr {
+  margin: 1em 0; /* 상하 여백 추가 */
+  border: none;
+  border-top: 2px solid #BCC924; /* 회색 구분선 */
+}
+
+/* .header-content 스타일링 */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px; /* 이미지 크기 조정 */
+  height: auto;
+  margin-right: 2em; /* 이미지 오른쪽 여백 */
+  margin-left: 2em;
+}
+
+.main-title {
+  text-align: left;
+  margin: 0; /* 기본 제목 여백 제거 */
+}

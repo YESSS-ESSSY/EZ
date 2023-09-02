@@ -1,8 +1,9 @@
-@import url(./style.css);
+@import url('./style.css');
+
 .title{
     text-align: center;
     color: var(--color-EGreen);
-    font-size:var(--font-size-large);
+    font-size:75px;
     font-weight:800;
     padding:20px 20px;
 }

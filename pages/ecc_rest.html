@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECC Rest</title>
+<link rel="stylesheet" href="../styles/ecc_rest.css">
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const floorButtons = document.querySelectorAll(".floor-button");
+    const descriptions = document.querySelectorAll(".description");
+
+    floorButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const floor = button.getAttribute("data-floor");
+        descriptions.forEach(description => {
+          description.classList.remove("active");
+          if (description.getAttribute("data-floor") === floor) {
+            description.classList.add("active");
+          }
+        });
+      });
+    });
+  });
+</script>
+</head>
+<body class="body">
+  <header>
+    <div class="header-content">
+    <img class="logo" src="https://media.discordapp.net/attachments/1103646435632750632/1146996946595237908/image.png?width=508&height=502" alt="이화여자대학교 로고">
+
+    <h1 class="main-title">ECC Rest</h1>
+    </div>
+    <hr>
+    <p class="subtitle">ECC에서 먹고 쉬는 곳</p>
+  </header>
+  <section class="content">
+    <div class="floor-buttons">
+      <button class="floor-button" data-floor="1">B1F</button>
+      <button class="floor-button" data-floor="2">B2F</button>
+      <button class="floor-button" data-floor="3">B3F</button>
+      <button class="floor-button" data-floor="4">B4F</button>
+    </div>
+    <div class="floor-description">
+      <p class="description" data-floor="1">
+        <img src="https://media.discordapp.net/attachments/1103646435632750632/1146990328553934969/image.png?width=565&height=450" alt="B1F 이미지"> <br>
+            B1F에는 많은 회의실과 강의실이 있습니다.<br>
+            - 정수기: 강의실 B101 옆 위치<br>
+            - 취식 가능 공간: 있음<br>
+            - 휴게 공간: 잉여계단, 중간에 배치된 동그라미 테이블
+
+      </p>
+
+      <p class="description" data-floor="2">
+        <img src="https://media.discordapp.net/attachments/1103646435632750632/1146990441963737108/image.png?width=547&height=433"> <br>
+          B2F는 여러 열람실들과 강의실이 있습니다.
+          <br>
+          - 정수기: 열람실 옆 위치<br>
+          - 취식 가능 공간: 있음<br>
+          - 휴게 공간: 중간에 배치된 동그라미 테이블, 여러 계단, 엘리베이터 앞 쇼파
+      </p>
+      
+
+      <p class="description" data-floor="3">
+        <img src="https://media.discordapp.net/attachments/1103646435632750632/1146990551384723579/image.png?width=541&height=432"> <br>
+      
+            B3F에는 다목적 휴게실과 강의실이 있습니다.
+            <br>
+            - 정수기: 열람실 옆 위치<br>
+            - 취식 가능 공간: 있음<br>
+            - 휴게 공간: 중간에 배치된 동그라미 테이블
+      </p>  
+      
+
+
+      <p class="description" data-floor="4">
+        <img src="https://media.discordapp.net/attachments/1103646435632750632/1146990643630059620/image.png?width=575&height=476" alt="B4F 이미지"> <br>
+
+            B4F에는 다양한 편의시설이 제공됩니다.<br>
+          - 편의점: GS25<br>
+          - 베이커리: 뚜레쥬르<br>
+          - 휴게 음식점: 닥터로빈, 이화김밥, 마이델플레이스, 샐러디<br>
+          - 정수기: GS25 옆에 위치<br>
+          - 취식 가능 공간: 있음<br>
+          - 휴게 공간: 삼성 극장 옆, 기념품샵 앞 벤치
+      </p>
+
+    </div>
+  </section>
+</body>
+</html>
