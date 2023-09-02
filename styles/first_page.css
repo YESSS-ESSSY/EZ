@@ -104,7 +104,6 @@ body {
     transition: all 250ms;
 }
 
-/* 마우스 올라가면 공학관 글씨도 진하게 하고 싶은데 할줄 모름 */
 .footer_container {
     display:flex;
     width:70rem;

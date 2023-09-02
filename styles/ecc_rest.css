@@ -109,6 +109,8 @@ header h1 {
   text-align: left;
   margin: 0; /* 기본 제목 여백 제거 */
 }
+<<<<<<< HEAD
+=======
 
 .floor-image {
   display: block;
@@ -116,3 +118,4 @@ header h1 {
   max-width: 100%; /* 이미지의 최대 너비를 100%로 설정합니다. */
   height: auto; /* 이미지의 높이를 자동으로 조정합니다. */
 }
+>>>>>>> 8f666fc57eed93113fcd4beb6a90f04c3480e1c1
