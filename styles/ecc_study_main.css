@@ -50,6 +50,11 @@
   transform: rotate(-45deg);
 }
 
+.aboutus_page--footer {
+  display: flex;
+  justify-content:center;   
+}
+
 @media (max-width: 768px) {
   #html { 
     border-bottom: 4px solid var(--color-light-bg); 
