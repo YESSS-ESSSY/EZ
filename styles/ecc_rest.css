@@ -6,7 +6,7 @@ body, h1, p {
 
 /* Set background color and font styles */
 .body {
-  font-family: 'Noto Sans KR', sans-serif
+  font-family: 'Noto Sans KR', sans-serif;
   background-color: #ffffff;
   color: #333333;
 }
@@ -64,20 +64,24 @@ header h1 {
   font-size: 1.1em; /* 조금 줄인 설명 글씨 크기 */
   color: #333333;
   line-height: 1.6; /* 줄 간격 늘리기 */
+  
 }
 
 .floor-description h2 {
   font-size: 1.4em; /* 문장 부분의 글씨 크기 */
-  margin-bottom: 0.5em; /* 문장 아래 여백 추가 */
+  margin-bottom: 0.5em; /*문장 아래 여백 추가*/
 }
-
+.dsc{
+  padding:30px;
+}
 /* Show description for the selected floor */
 .description {
-  display: none;
+  display:none;
 }
 
-.description.active {
-  display: block;
+.description.active{
+ display:flex;
+ flex-direction: row;
 }
 
 
