@@ -4,9 +4,30 @@
   text-align: center; /*가운데 정렬*/
 }
 
+/*로고*/
+#home_btn{
+  display:inline-flex;
+  cursor:pointer;
+  padding: 10px;
+}
+.section__header img{
+  width: 70px;
+  position:absolute;
+  top:23px;
+  left: 100px;
+}
+#home_btn_title{
+  font-size:var(--font-size-middle);
+  font-weight:bold;
+  color:var(--color-EGreen);
+  position:absolute;
+  top:32px;
+  left: 180px;
+}
+
 /*제목*/
 #choose .section__title {
-  padding-top: 0.5em; /*제일 위와의 공간*/
+  padding-top: 0em; /*제일 위와의 공간*/
   padding-bottom: 0.2em; /*부제와의 공간*/
   font-size: var(--font-size-large); 
   font-weight:bolder;
@@ -100,6 +121,19 @@
     font-size: var(--font-size-middle); 
     font-weight:bolder;
   }
+
+  /*홈버튼*/
+  #home_btn{
+    text-align: center;
+  }
+  .section__header img{
+    height:50px;
+    position:inherit;
+  }
+  #home_btn_title{
+    position: inherit;
+  }
+
   /*로고 크기*/
   .choose__button img {
     height: 50px;
@@ -126,6 +160,13 @@
 @media (min-width: 769px) {
   #choose {
     grid-column: 1 / -1; /*화면 꽉 채우기*/
+  }
+
+  /*제목*/
+  #choose .section__title {
+    padding-bottom: 0.2em; /*부제와의 공간*/
+    font-size: var(--font-size-large); 
+    font-weight:bolder;
   }
   #choose {
     /*border가 오른쪽에 들어가야함*/
