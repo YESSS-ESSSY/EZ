@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #00462A;
-
+  
   color: white;
 }
 .header__homelink {
@@ -19,6 +19,11 @@
   height: var(--height-toolbar);
   line-height: var(--height-toolbar);
   cursor: pointer;
+}
+.header__E-map{
+  font-family: var(--font-code);
+  font-size: 2.5em;
+  font-weight: bold;
 }
 .header__logo {
   height: 60px;
