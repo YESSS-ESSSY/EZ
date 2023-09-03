@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECC Rest</title>
+<link rel="stylesheet" href="../styles/posco_rest.css">
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const floorButtons = document.querySelectorAll(".floor-button");
+    const descriptions = document.querySelectorAll(".description");
+
+    floorButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const floor = button.getAttribute("data-floor");
+        descriptions.forEach(description => {
+          description.classList.remove("active");
+          if (description.getAttribute("data-floor") === floor) {
+            description.classList.add("active");
+          }
+        });
+      });
+    });
+  });
+</script>
+</head>
+<body class="body">
+  <header>
+    <div class="header-content">
+    <img class="logo" src="https://media.discordapp.net/attachments/1103646435632750632/1146996946595237908/image.png?width=508&height=502" alt="이화여자대학교 로고">
+
+    <h1 class="main-title">Posco Rest</h1>
+    </div>
+    <hr>
+    <p class="subtitle">Posco관에서 먹고 쉬는 곳</p>
+  </header>
+  <section class="content">
+    <div class="floor-buttons">
+      <button class="floor-button" data-floor="B2">B2F</button>
+      <button class="floor-button" data-floor="B1">B1F</button>
+      <button class="floor-button" data-floor="1">1F</button>
+      <button class="floor-button" data-floor="2">2F</button>
+      <button class="floor-button" data-floor="3">3F</button>
+      <button class="floor-button" data-floor="4">4F</button>
+      <button class="floor-button" data-floor="5">5F</button>
+      <button class="floor-button" data-floor="6">6F</button>
+      <button class="floor-button" data-floor="7">7F</button>
+    </div>
+    <div class="floor-description">
+      <p class="description" data-floor="B2">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="B2F 이미지"> 
+        <br>
+        🍀🍀B2F에는 계단실과 기계실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 없음<br>
+        - 휴게 공간: 샤워실
+      </span>
+      </p>
+
+
+      <p class="description" data-floor="B1">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="B1F 이미지"> 
+        <br>
+        🍀🍀B1F에는 여러 식당과 휴게실이 있습니다.🍀🍀<br>
+        - 정수기: CU 편의점 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 식당: 오봉김밥, 파리바게트, 더벤티, CU 편의점<br>
+        - 휴게 공간: 편의점 앞에 배치된 테이블, 오봉김밥 테이블, 학생휴게실 B101호
+      </span>
+      </p>
+
+      <p class="description" data-floor="1">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="1F 이미지"> 
+        <br>
+        🍀🍀1F에는 많은 회의실과 강의실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 강의실 앞 여러 쇼파
+      </span>
+      </p>
+
+      <p class="description" data-floor="2">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="2F 이미지"> 
+        <br>
+        🍀🍀2F에는 많은 회의실과 강의실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 강의실 앞 여러 쇼파
+      </span>
+      </p>
+
+      <p class="description" data-floor="3">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="3F 이미지"> 
+        <br>
+        🍀🍀3F에는 많은 회의실과 강의실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 강의실 앞 여러 쇼파
+      </span>
+      </p>
+
+      <p class="description" data-floor="4">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="4F 이미지"> 
+        <br>
+        🍀🍀4F에는 많은 회의실과 강의실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 강의실 앞 여러 쇼파
+      </span>
+      </p>
+
+      <p class="description" data-floor="5">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="5F 이미지"> 
+        <br>
+        🍀🍀5F에는 많은 회의실과 강의실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 강의실 앞 여러 쇼파
+      </span>
+      </p>
+
+      <p class="description" data-floor="6">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="6F 이미지"> 
+        <br>
+        🍀🍀6F에는 많은 회의실과 강의실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 강의실 앞 여러 쇼파
+      </span>
+      </p>
+      
+      <p class="description" data-floor="7">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1147796068604588072/image.png?width=535&height=408" alt="7F 이미지"> 
+        <br>
+        🍀🍀7F에는 많은 회의실과 강의실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 강의실 앞 여러 쇼파
+      </span>
+      </p>
+
+    </div>
+  </section>
+  <img src="https://media.discordapp.net/attachments/1103643706160066642/1147794666402631700/image.png?width=1183&height=575" alt="기본 이미지" class="floor-image" width="100%">
+</body>
+</html>
