@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-MAP : Engineering Building</title>
+<link rel="stylesheet" href="../styles/engineering_bld.css">
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const floorButtons = document.querySelectorAll(".floor-button");
+    const descriptions = document.querySelectorAll(".description");
+
+    floorButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const floor = button.getAttribute("data-floor");
+        descriptions.forEach(description => {
+          description.classList.remove("active");
+          if (description.getAttribute("data-floor") === floor) {
+            description.classList.add("active");
+          }
+        });
+      });
+    });
+  });
+</script>
+</head>
+<body class="body">
+  <header>
+    <div class="header-content"> 
+    <img class="logo" src="../images/ewhalogo.png" alt="이화여대 로고">
+    <h1 class="main-title">Engineering_Building Rest</h1>
+    </div>
+    <hr>
+    <p class="subtitle">아산공학관에서 먹고 쉬는 곳</p>
+  </header>
+  <section class="content">
+    <div class="floor-buttons">  
+      <button class="floor-button" data-floor="-1">B1F</button>
+      <button class="floor-button" data-floor="1">1F</button>
+      <button class="floor-button" data-floor="2">2F</button>
+      <button class="floor-button" data-floor="3">3F</button>
+      <button class="floor-button" data-floor="4">4F</button>
+      <button class="floor-button" data-floor="5">5F</button>
+    </div>
+    <div class="floor-description">
+      <p class="description" data-floor="-1">
+        <img src="" alt="아산공학관 B1층 이미지"> <br>
+        B1F에는 많은 회의실과 강의실이 있습니다.<br>
+        - 정수기: 강의실 B101 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 공간: 잉여계단, 중간에 배치된 동그라미 테이블
+
+      </p>
+
+      <p class="description" data-floor="1">
+        <img src="" alt="아산공학관 1층 이미지"> <br>
+          B2F는 여러 열람실들과 강의실이 있습니다.
+          <br>
+          - 정수기: 열람실 옆 위치<br>
+          - 취식 가능 공간: 있음<br>
+          - 휴게 공간: 중간에 배치된 동그라미 테이블, 여러 계단, 엘리베이터 앞 쇼파
+      </p>
+
+      <p class="description" data-floor="2">
+        <img src="" alt="아산공학관 2층 이미지"> <br>
+          B2F는 여러 열람실들과 강의실이 있습니다.
+          <br>
+          - 정수기: 열람실 옆 위치<br>
+          - 취식 가능 공간: 있음<br>
+          - 휴게 공간: 중간에 배치된 동그라미 테이블, 여러 계단, 엘리베이터 앞 쇼파
+      </p>
+
+
+      <p class="description" data-floor="3">
+        <img src="" alt="아산공학관 3층 이미지"> <br>
+          B2F는 여러 열람실들과 강의실이 있습니다.
+          <br>
+          - 정수기: 열람실 옆 위치<br>
+          - 취식 가능 공간: 있음<br>
+          - 휴게 공간: 중간에 배치된 동그라미 테이블, 여러 계단, 엘리베이터 앞 쇼파
+      </p>
+      
+
+      <p class="description" data-floor="4">
+        <img src="" alt="아산공학관 4층 이미지"> <br>
+          B2F는 여러 열람실들과 강의실이 있습니다.
+          <br>
+          - 정수기: 열람실 옆 위치<br>
+          - 취식 가능 공간: 있음<br>
+          - 휴게 공간: 중간에 배치된 동그라미 테이블, 여러 계단, 엘리베이터 앞 쇼파
+      </p>
+
+      <p class="description" data-floor="5">
+        <img src="" alt="아산공학관 5층 이미지"> <br>
+          B2F는 여러 열람실들과 강의실이 있습니다.
+          <br>
+          - 정수기: 열람실 옆 위치<br>
+          - 취식 가능 공간: 있음<br>
+          - 휴게 공간: 중간에 배치된 동그라미 테이블, 여러 계단, 엘리베이터 앞 쇼파
+      </p>
+
+    </div>
+    <img src="../images/공학관/아산공학관사진.jpg" alt="아산공학관 건물 사진" class="floor-image" width="100%" height="50%">
+  </section>
+</body>
+</html>
