@@ -79,7 +79,9 @@ header {
 .description {
   display:none;
 }
-
+.bold{
+  font-weight: 800;
+}
 .description.active{
  display:flex;
  flex-direction: row;
