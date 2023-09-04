@@ -117,3 +117,40 @@ body, h1, p {
     max-width: 100%; /* 이미지의 최대 너비를 100%로 설정합니다. */
     height: auto; /* 이미지의 높이를 자동으로 조정합니다. */
   }
+
+  /*footer*/
+.choose--footer{
+  background-color: #FFFDF1;
+}
+.footer_container {
+  display:flex;
+  width:70rem;
+  border-top: 2px solid rgba(51, 45, 45, 0.6);
+  justify-content: space-between;
+}
+.choose--footer {
+  display:flex;
+  position: absolute;
+  top:600px;
+  left:50%;
+  transform:translate(-50%,0%);
+}
+.aboutus {
+  padding: 10px 50px;
+}
+
+.allrights{
+  padding: 10px 30px;
+}
+
+.sr-only { /*sr-only 문제 해결*/
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
