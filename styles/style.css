@@ -7,6 +7,10 @@
 @import url('./eng_study_header.css');
 @import url('./eng_study_intro.css');
 @import url('./eng_study_main.css');
+@import url('./posco_study_main.css');
+@import url('./posco_study_intro.css');
+@import url('./posco_study_header.css');
+@import url('./posco_lastline.css');
 
 /*폰트 불러오기*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
