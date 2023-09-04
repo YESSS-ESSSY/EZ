@@ -12,23 +12,23 @@ body, h1, p {
   color: #333333;
 }
 
-/* Style header */
+    /* Style header */
 header {
   background-color: #00462A; /* 진녹색 */
   color: #fffdf1;
   text-align: center;
   padding: 1em 0;
-}
-
-header h1 {
+          }
+        
+    header h1 {
   font-size: 3em; /* 큰 글씨 크기 */
 }
 
-.subtitle {
+      .subtitle {
   font-size: 1.2em; /* 큰 글씨 크기 */
 }
 
-/* Style content section */
+      /* Style content section */
 .content {
   margin: 2em;
   padding: 1em;
@@ -65,8 +65,8 @@ header h1 {
   font-size: 1.1em; /* 조금 줄인 설명 글씨 크기 */
   color: #333333;
   line-height: 1.6; /* 줄 간격 늘리기 */
-  
-}
+
+      }
 
 .floor-description h2 {
   font-size: 1.4em; /* 문장 부분의 글씨 크기 */
@@ -84,16 +84,16 @@ header h1 {
  display:flex;
  flex-direction: row;
 }
+      
 
-
-/* Style the horizontal rule for floor descriptions */
+      /* Style the horizontal rule for floor descriptions */
 .floor-description hr {
   margin: 1em 0; /* 상하 여백 추가 */
   border: none;
   border-top: 2px solid #BCC924; /* 회색 구분선 */
 }
-
-/* .header-content 스타일링 */
+      
+          /* .header-content 스타일링 */
 .header-content {
   display: flex;
   align-items: center;
@@ -201,8 +201,8 @@ header h1 {
 .description.active{
  display:flex;
  flex-direction: row;
-}
-
+}  
+      
 
 /* Style the horizontal rule for floor descriptions */
 .floor-description hr {
@@ -211,20 +211,20 @@ header h1 {
   border-top: 2px solid #BCC924; /* 회색 구분선 */
 }
 
-/* .header-content 스타일링 */
+      /* .header-content 스타일링 */
 .header-content {
   display: flex;
   align-items: center;
 }
 
-.logo {
+            .logo {
   width: 80px; /* 이미지 크기 조정 */
   height: auto;
   margin-right: 2em; /* 이미지 오른쪽 여백 */
   margin-left: 2em;
 }
 
-.main-title {
+    .main-title {
   text-align: left;
   margin: 0; /* 기본 제목 여백 제거 */
 }

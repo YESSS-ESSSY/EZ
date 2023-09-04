@@ -1,6 +1,6 @@
-#ecc_intro { /*사진 충돌 일어나길래 id로 스타일을 주었음*/
+#eng_intro {
   position: relative;
-  background-image: url('../images/ECC/ECCimage.jpeg');
+  background-image: url('../images/공학관/아산공학관사진.jpg');
   background-size: cover;
   background-position: center;
 }
