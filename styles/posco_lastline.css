@@ -1,0 +1,20 @@
+
+
+.footer_container {
+    display: flex;
+    width:70rem;
+    border-top: 3px solid rgba(51, 45, 45, 0.6);
+    justify-content: space-between;
+}
+.lastline--footer {
+    display: flex;
+    justify-content:center;   
+}
+.aboutus {
+    padding: 10px 50px;
+}
+
+.allrights{
+    padding: 10px 30px;
+}
+
