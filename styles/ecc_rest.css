@@ -259,3 +259,15 @@ header h1 {
 .allrights{
   padding: 10px 30px;
 }
+
+.sr-only { /*sr-only 문제 해결*/
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
