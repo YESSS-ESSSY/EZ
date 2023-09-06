@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-MAP: ECC Rest</title>
+<link rel="stylesheet" href="../styles/lib_rest.css">
+<link rel="shortcut icon" href="../images/ewhalogo.png" type="image/x-icon">
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const floorButtons = document.querySelectorAll(".floor-button");
+    const descriptions = document.querySelectorAll(".description");
+
+    floorButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const floor = button.getAttribute("data-floor");
+        descriptions.forEach(description => {
+          description.classList.remove("active");
+          if (description.getAttribute("data-floor") === floor) {
+            description.classList.add("active");
+          }
+        });
+      });
+    });
+  });
+</script>
+</head>
+<body class="body">
+  <header>
+    <div class="header-content">
+      <a href="./first_page.html">
+        <img class="logo" src="../images/ewhalogo.png" alt="이화여자대학교 로고">
+       </a>
+
+    <h1 class="main-title">Library Rest</h1>
+    </div>
+    <hr>
+    <p class="subtitle">중앙도서관에서 먹고 쉬는 곳</p>
+  </header>
+  <a href="./ecc_choosing.html" class="back-button">⬅ BACK</a>
+  <section class="content">
+    <div class="floor-buttons">
+      <button class="floor-button" data-floor="B1">B1F</button>
+      <button class="floor-button" data-floor="1">1F</button>
+      <button class="floor-button" data-floor="2">2F</button>
+      <button class="floor-button" data-floor="3">3F</button>
+    </div>
+    <div class="floor-description">
+      <p class="description" data-floor="B1">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1148917098823823401/image.png?width=765&height=658" alt="B1F 이미지" style="margin-right:100px"> 
+        <br>
+        🍀🍀B1F에는 여러 열람실과 휴게실이 있습니다.🍀🍀<br>
+        - 정수기: 이화상점 옆 위치<br>
+        - 취식 가능 공간: 있음<br>
+        - 휴게 식당: 이화상점<br>
+        - 휴게 공간: 이화상점 옆에 배치된 테이블,소파
+      </span>
+      </p>
+
+      <p class="description" data-floor="1">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1148911896779575396/image.png?width=597&height=662" alt="1F 이미지" style="margin-right:100px"> 
+        <br>
+        🍀🍀1F에는 라운지와 미디어 스테이지가 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 없음<br>
+        - 휴게 공간: 라운지, 미디어 스테이지 소파
+      </span>
+      </p>
+
+      <p class="description" data-floor="2">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1148912012982747236/image.png?width=648&height=662" alt="2F 이미지" style="margin-right:100px"> 
+        <br>
+        🍀🍀2F에는 정보검색실과 학습실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 없음<br>
+        - 휴게 공간: 출입문 앞 여러 소파
+      </span>
+      </p>
+
+      <p class="description" data-floor="3">
+        <img src="https://media.discordapp.net/attachments/1103643706160066642/1148912301349539920/image.png?width=513&height=662" alt="3F 이미지" style="margin-right:100px"> 
+        <br>
+        🍀🍀3F에는 여러 자료실이 있습니다.🍀🍀<br>
+        - 정수기: 화장실 옆 위치<br>
+        - 취식 가능 공간: 없음<br>
+        - 휴게 공간: 책꽂이 옆 여러 자리 마련
+      </span>
+      </p>
+    </div>
+  </section>
+  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5150%2F2021%2F07%2F05%2F0000033914_002_20210705103206489.jpg&type=sc960_832" alt="기본 이미지" class="floor-image" width="100%">
+
+  <footer class="aboutus_page--footer"> 
+    <container class="footer_container">
+        <h1 class="sr-only">Copyright</h1>
+        <p class="allrights">
+        2023  YESSS-ESSSY <br>All rights reserved
+        </p>
+        <a class="aboutus" href="./aboutus.html">about us</a>
+    </container>    
+</footer>
+
+</body>
+</html>
