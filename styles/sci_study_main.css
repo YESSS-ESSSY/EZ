@@ -16,6 +16,7 @@
   margin-top: 1.6em;
   font-size: var(--font-size-text);
   color: var(--color-text);
+  line-height: 200%; /*줄간격*/
 }
 .html-css__desc strong {
   font-weight: bold;
@@ -37,7 +38,12 @@
   color: var(--color-EGreen);
 }
 
-/* 초록색 체크표시 */
+.floor{
+  color: white;
+  background-color: var(--color-EGreen);
+}
+
+/* 초록색 체크표시 */ /*이거 어디에 쓰이는건지..?*/
 .html-css__spec dd::before {
   content: '';
   display: inline-block;
@@ -89,3 +95,4 @@
     text-align: left;
   }
 }
+

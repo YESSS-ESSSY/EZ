@@ -11,6 +11,9 @@
 @import url('./posco_study_intro.css');
 @import url('./posco_study_header.css');
 @import url('./posco_lastline.css');
+@import url('./sci_study_header.css');
+@import url('./sci_study_intro.css');
+@import url('./sci_study_main.css');
 
 /*폰트 불러오기*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
@@ -42,8 +45,8 @@ body {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
   
-  /* 개발용 설정 */
-    min-height: 150vh;
+  /* 개발용 설정 -> 개발 완료 되어서 주석 처리하였음
+    min-height: 150vh; */
 }
   
 h1, h2, h3, h4, h5, h6 {

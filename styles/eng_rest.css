@@ -154,3 +154,19 @@ body, h1, p {
 	white-space: nowrap;
 	border-width: 0;
 }
+/* 스타일링된 뒤로가기 버튼 */
+.back-button {
+  position:absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00462A; /* 버튼 배경색 */
+  color: #fff; /* 버튼 텍스트 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  top:92px; 
+  margin: 20px; /*버튼 위 여백 설정*/
+} 
+
+/* 버튼에 호버 효과 추가 */
+.back-button:hover {
+  background-color: #002F1F; /* 호버 시 배경색 변경 */
+}
