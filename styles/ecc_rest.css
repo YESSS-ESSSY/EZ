@@ -283,7 +283,9 @@ header h1 {
   background-color: #00462A; /* 버튼 배경색 */
   color: #fff; /* 버튼 텍스트 색상 */
   text-decoration: none; /* 밑줄 제거 */
-  margin-top: 20px; /* 버튼 위 여백 설정 */
+  position:absolute;
+  top:92px; 
+  margin: 20px;
 }
 
 /* 버튼에 호버 효과 추가 */
