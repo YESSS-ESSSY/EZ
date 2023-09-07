@@ -50,8 +50,8 @@ body {
     /* 공학관 */
     width:35px;
     position: absolute;
-    top: 20px;
-    left:320px;
+    top: 40px;
+    left:750px;
     cursor: pointer;
 
 }
@@ -59,24 +59,24 @@ body {
     /* 종합과학관 */
     width:35px;
     position: absolute;
-    top:50px;
-    left:323px;
+    top:100px;
+    left:730px;
     cursor: pointer;
 }
 .third_button {
     /* 중앙도서관 */
     width:35px;
     position: absolute;
-    top:102px;
-    left:384px;
+    top:200px;
+    left:870px;
     cursor: pointer;
 }
 .fourth_button {
     /* 포스코관 */
     width:35px;
     position: absolute;
-    top:73px;
-    left:295px;
+    top:140px;
+    left:700px;
     cursor: pointer;
     
 }
@@ -84,8 +84,8 @@ body {
     /* ECC. */
     width:35px;
     position: absolute;
-    top:135px;
-    left:323px;
+    top:270px;
+    left:750px;
     cursor: pointer;
     
 }
