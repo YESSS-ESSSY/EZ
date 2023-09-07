@@ -216,13 +216,13 @@ body, h1, p {
     border-top: 2px solid #BCC924; /* 회색 구분선 */
   }
   
-        /* .header-content 스타일링 */
+   /* .header-content 스타일링 */
   .header-content {
     display: flex;
     align-items: center;
   }
   
-              .logo {
+  .logo {
     width: 80px; /* 이미지 크기 조정 */
     height: auto;
     margin-right: 2em; /* 이미지 오른쪽 여백 */
