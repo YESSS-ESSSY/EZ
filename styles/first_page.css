@@ -20,7 +20,10 @@ body {
     background-color: var(--color-EPearBlossom);
 }
 .first_page--image{
+    position:absolute;
+    left:440px;
     height:500px;
+    z-index:-1;
 }
 
 .nav_ul {
