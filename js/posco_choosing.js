@@ -15,5 +15,5 @@ function toRestPage(){
   window.location.href="../pages/posco_rest.html";
 }
 function toHomePage(){
-  window.location.href="../pages/first_page.html";
+  window.location.href="../index.html";
 }
