@@ -120,11 +120,16 @@ header h1 {
 .choose--footer{
   background-color: #FFFDF1;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .footer_container {
   display:flex;
   width:70rem;
   border-top: 2px solid rgba(51, 45, 45, 0.6);
   justify-content: space-between;
+  margin: auto;
 }
 .choose--footer {
   display:flex;
