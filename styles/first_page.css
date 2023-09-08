@@ -21,7 +21,7 @@ body {
 }
 .first_page--image{
     position:absolute;
-    left:36%;
+    left:37%;
     height:500px;
     z-index:-1;
 }
