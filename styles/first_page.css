@@ -63,7 +63,7 @@ body {
     width:35px;
     position: absolute;
     top:100px;
-    left:730px;
+    left:740px;
     cursor: pointer;
 }
 .third_button {
@@ -71,15 +71,15 @@ body {
     width:35px;
     position: absolute;
     top:200px;
-    left:870px;
+    left:875px;
     cursor: pointer;
 }
 .fourth_button {
     /* 포스코관 */
     width:35px;
     position: absolute;
-    top:140px;
-    left:700px;
+    top:143px;
+    left:696px;
     cursor: pointer;
     
 }
