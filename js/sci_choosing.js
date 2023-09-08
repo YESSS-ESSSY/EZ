@@ -15,5 +15,5 @@ function toRestPage(){
   window.location.href="../pages/sci_rest.html";
 }
 function toHomePage(){
-  window.location.href="../pages/first_page.html";
+  window.location.href="../first_page.html";
 }
