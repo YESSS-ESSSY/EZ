@@ -13,5 +13,5 @@ function toRestPage(){
   window.location.href="../pages/eng_rest.html";
 }
 function toHomePage(){
-  window.location.href="../first_page.html";
+  window.location.href="../index.html";
 }
